@@ -1,27 +1,33 @@
+import Image from "next/image"
+
+
 type CardProps = {
-    title: string;
-    description: string;
-    imageUrl: string;
+    url: string
+    title: string
+    description: string
+
 }
 
-export default function Card(props: CardProps) {
+
+
+
+
+export default function AtvCard({url, title, description} : CardProps) {
     return (
-        <div className="flex justify-center items-center min-h-screen">
-        <div className="max-w-sm bg-blue-600 rounded-2xl shadow-lg">
-        <img 
-            src={props.imageUrl}
-            alt={props.title}
-            className="w-full h-48 object-cover rounded-t-2xl"
-        />
-            <div>
-            <h1 className="text-xl font-bold mb-2 text-center text-black">
-            {props.title}
-            </h1>
-            <p className="text-xl font-bold mb-2 text-center text-black">
-            {props.description}
-            </p>
+        <>
+            <div className="bg-amber-300 pb-2.5 max-w-[400px] rounded-2xl">
+                <div>
+                    <Image 
+                    src={url}
+                    alt="sla"
+                    width={400}
+                    height={400}
+                    className="rounded-t-2xl"
+                    />
+                </div>
+                <h2 className="px-3 text-4xl my-1">{title}</h2>
+                <p className="px-3">{description}</p>
             </div>
-        </div>
-    </div>
+        </>
     )
 }
