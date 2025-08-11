@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image"
+import LikeAccount from "./like"
 
 
 type CardProps = {
@@ -28,6 +31,7 @@ export default function AtvCard({url, title, description, categoria} : CardProps
                 <h2 className="px-3 text-4xl my-1">{title}</h2>
                 <p className="px-3">{description}</p>
                 <p className="px-3 font-bold text-red-600 text-[12px]">{categoria}</p>
+                <LikeAccount></LikeAccount>
             </div>
         </>
     )

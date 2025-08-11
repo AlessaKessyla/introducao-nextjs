@@ -1,3 +1,4 @@
+import LikeAccount from "./like";
 
 type CommentProps = {
     name: string;
@@ -11,6 +12,7 @@ export default function Coment ({ name, message, timestamp}: CommentProps) {
             <h4 className=" font-bold">{name}</h4>
             <p>{message}</p>
             <span className="text-sm text-gray-500">{timestamp}</span>
+            <LikeAccount/>
         </div>
     );
 
