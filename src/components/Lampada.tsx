@@ -6,7 +6,7 @@ export default function Lampada(){
     const [ligada, setLigada] = useState(false);
 
     function LigarOuDesligar() {
-        setLigada(!ligada);
+        setLigada(!ligada)
     }
 
     return (
@@ -28,6 +28,7 @@ export default function Lampada(){
             />
 
         </div>
+
 
     );
 }
