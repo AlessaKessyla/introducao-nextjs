@@ -1,4 +1,5 @@
 import AtvCard from "@/components/Card"
+import MiniDisplay from "@/components/miniDisplay"
 
 
 const CardData = [
@@ -61,7 +62,8 @@ export default function About(){
                         
                         />
                     ))}
-                </div>                
+                </div>    
+                <MiniDisplay/>
         </div>
     )
 }
