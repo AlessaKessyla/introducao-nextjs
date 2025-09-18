@@ -15,6 +15,7 @@ type CardProps = {
 
 
 
+
 export default function AtvCard({url, title, description, categoria} : CardProps) {
     return (
         <>
